@@ -1,29 +1,17 @@
 import ElementList from "./components/ElementList"
-import Header from "./components/header"
+import Header from "./header/Header"
 import {date} from './data'
-export default function App(){
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+export default function App(){
   return(
     <div>
       <Header>
 
       </Header>
     <main>
-      <div className="card">
-    
-        <div className="card-body">
-          <h4 className="card-title">Title</h4>
-          <p className="card-text">Text</p>
-        </div>
-        <ul className="list-group list-group-flush">
-          
-          <ElementList title="" content="">
-
-          </ElementList>
-      
-        </ul>
-      </div>
-      
+     
 
     </main>
     <footer>

@@ -1,0 +1,16 @@
+header{
+    width: auto;
+    height: 900px;
+    border: 1px solid black;
+    color:white;
+    background-image:url(/public/bg/wallpaper.png);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+
+.list-menu
+{
+    text-align: center;
+    width: 100%;    
+    
+}

@@ -15,12 +15,12 @@ export default function Header() {
           </Col>
           <Col className="col col-md-9">
             <div className="list-menu justify-content-evenly align-items-center ">
-              <A link="">Главная</A>
-              <A link="//">Про гида</A>
-              <A link="">Программа тура</A>
-              <A link="">Стоимость</A>
-              <A link="">Блог</A>
-              <A link="">Контакты</A>
+              <A link="#">Главная</A>
+              <A link="#">Про гида</A>
+              <A link="#">Программа тура</A>
+              <A link="#">Стоимость</A>
+              <A link="#">Блог</A>
+              <A link="#">Контакты</A>
               <Button>Консультация</Button>
             </div>
             <div className="shortMenu">

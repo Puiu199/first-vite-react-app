@@ -1,0 +1,12 @@
+.greenBtn
+{
+    width: 150px;
+    height: 40px;
+    background: #1A3E3E;
+    border:1px solid #1A3E3E;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+.whiteB {
+    width: auto;
+    height: 50px;
+    background: white;
+    border: none;
+    color: #1A3E3E;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding-left: 10px;
+    text-align: center;
+    padding-right: 10px;
+
+}

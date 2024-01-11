@@ -1,0 +1,11 @@
+.wrappV {
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 150px;
+  border: 1px solid black;
+  border-radius: 24px;
+  background: #000;
+  display: flex;
+}

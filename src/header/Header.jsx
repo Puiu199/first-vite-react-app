@@ -37,8 +37,8 @@ export default function Header() {
         </Row>
       </Container>
       <Container>
-        <Row className="d-flex justify-content-end align-items-end">
-          <Col className="col  col-12">
+        <Row className="d-flex justify-content-start align-items-end ">
+          <Col className=" col  col-8">
             <p className="slogan">
               Насладись прогулкой в горах с командой единомышленников
             </p>
@@ -47,7 +47,7 @@ export default function Header() {
       </Container>
       <Container>
         <Row className="d-flex justify-content-center ">
-          <Col className="col-sm col-md-10 d-flex justify-content-evenly align-items-center wrappSelectOptions">
+          <Col className=" col col-sm-12 col-md-10 d-flex justify-content-evenly align-items-center wrappSelectOptions">
             <select className="selectStyle" type="" name="" id="">
               <option value="">Локация для тура</option>
             </select>

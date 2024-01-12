@@ -3,12 +3,12 @@ import Title from "./components/Title";
 import YellowT from "./components/YellowT";
 import "./index.css";
 import Header from "./header/Header";
-import { date } from "./data";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Wrapp from "./wrappImg/Wrapp";
 import WrappV from "./wrappVideo/WrappV";
 import Button from "./greenB/Button";
+import ElementList from "./components/ElementList";
 
 export default function App() {
   return (
@@ -16,13 +16,17 @@ export default function App() {
       <Header></Header>
       <main className="min-vh-100">
         <Container>
-          <Row className="d-flex mt-5 g-2 flex-wrap justify-content-center ">
+          <Row className="d-flex mt-5 g-2 flex-wrap justify-content-between ">
             <Col className="col-12 col-sm-6 d-flex ">
-              <Wrapp>s</Wrapp>
-              <WrappV>a</WrappV>
+              <Wrapp>
+                <img src="public/bg/bg1.png" alt="" />
+              </Wrapp>
+              <WrappV>
+                <img src="public/bg/bg2.png" alt="" />
+              </WrappV>
             </Col>
-            <Col className=" col-12 d-flex flex-column col-sm-5">
-              <div className="wrappText">
+            <Col className="col-12 d-flex flex-column  col-sm-6">
+              <div className="wrappText pl-3">
                 <YellowT>о нашем походе</YellowT>
                 <Title>Исследуйте все горные массивы мира вместе с нами</Title>
                 <Tcontent>
@@ -36,53 +40,79 @@ export default function App() {
               </div>
             </Col>
           </Row>
-          <Row className="d-flex g-2">
-            <Col className="col-sm-6 col-12 d-flex flex-column justify-content-evenly align-items-start">
-              <YellowT>наше предложение</YellowT>
-              <Title>Лучшие программы для тебя</Title>
-              <Tcontent>
-                Его корни уходят в один фрагмент классической латыни 45 года
-                н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
-                профессор латыни из колледжа.
-              </Tcontent>
-              <div className="d-flex flex-column justify-content-evenly align-items-start">
-                <div>
-                  <img src="" alt="" />
-                  <div className=" d-flex flex-column justify-content-between  align-items-start">
-                    <Title>Опытный гид</Title>
-                    <Tcontent>
-                      Для современного мира базовый вектор развития предполагает
-                      независимые способы реализации соответствующих условий
-                      активизации.
-                    </Tcontent>
+        </Container>
+        <div className="bg-light">
+          <Container>
+            <Row className="d-flex g-2 bg-light">
+              <Col className="col-sm-6 col-12 d-flex flex-column justify-content-evenly pt-5 pb-5 align-items-start">
+                <YellowT>наше предложение</YellowT>
+                <Title>Лучшие программы для тебя</Title>
+                <Tcontent>
+                  Его корни уходят в один фрагмент классической латыни 45 года
+                  н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
+                  профессор латыни из колледжа.
+                </Tcontent>
+                <div className="d-flex flex-column justify-content-evenly align-items-start">
+                  <div className="d-flex">
+                    <img src="/public/img/people.svg" alt="" />
+                    <div className=" d-flex flex-column justify-content-between mt-2 mb-2  align-items-start">
+                      <Tcontent>
+                        <b> Опытный гид</b>
+                      </Tcontent>
+                      <div className="">
+                        Для современного мира базовый вектор развития
+                        предполагает независимые способы реализации
+                        соответствующих условий активизации.
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <img src="" alt="" />
-                  <div className=" d-flex flex-column justify-content-between  align-items-start">
-                    <Title>Безопасный поход</Title>
-                    <Tcontent>
-                      Для современного мира базовый вектор развития предполагает
-                      независимые способы реализации соответствующих условий
-                      активизации.
-                    </Tcontent>
+                  <div className="d-flex">
+                    <img src="/public/img/shild.svg" alt="" />
+                    <div className=" d-flex flex-column justify-content-between mt-2 mb-2 align-items-start">
+                      <Tcontent>
+                        <b>Безопасный поход</b>
+                      </Tcontent>
+                      <Tcontent>
+                        Для современного мира базовый вектор развития
+                        предполагает независимые способы реализации
+                        соответствующих условий активизации.
+                      </Tcontent>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <img src="" alt="" />
-                  <div className=" d-flex flex-column justify-content-between  align-items-start">
-                    <Title>Лояльные цены</Title>
-                    <Tcontent>
-                      Для современного мира базовый вектор развития предполагает
-                      независимые способы реализации соответствующих условий
-                      активизации.
-                    </Tcontent>
+                  <div className="d-flex justify-content-between aligni mt-2 mb-5">
+                    <img src="/public/img/yTag.svg" alt="" />
+                    <div className="d-flex flex-column justify-content-between ml-2  align-items-start">
+                      <Tcontent>
+                        <b>Лояльные цены</b>
+                      </Tcontent>
+                      <Tcontent>
+                        Для современного мира базовый вектор развития
+                        предполагает независимые способы реализации
+                        соответствующих условий активизации.
+                      </Tcontent>
+                    </div>
                   </div>
+                  <Button>Стоимость программ</Button>
                 </div>
-                <Button>Стоимость программ</Button>
-              </div>
+              </Col>
+              <Col></Col>
+            </Row>
+          </Container>
+        </div>
+        <Container>
+          <Row>
+            <Col className="d-flex flex-column  mt-5 mb-3 align-items-center ">
+              <YellowT>по версии отдыхающих</YellowT>
+              <Title>Популярные направления</Title>
             </Col>
-            <Col></Col>
+          </Row>
+          <Row className="d-flex justify-content-evenly flex-row overflow-hidden">
+            <ElementList></ElementList>
+          </Row>
+          <Row className="mt-3 ">
+            <Col className="col d-flex justify-content-center align-items-center">
+              <Button>Рейтинг направлений</Button>
+            </Col>
           </Row>
         </Container>
       </main>

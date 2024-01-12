@@ -1,14 +1,23 @@
-export let date=[
-    {
-        title:"Primul Element",
-        content:"Date despre primul element"
-    },
-    {
-        title:"Al doilea  Element",
-        content:"Date despre al doilea element"
-    },
-    {
-        title:"Al treilea  Element",
-        content:"Date despre al treilea element"
-    }
-]
+export let date = [
+  {
+    bgImg: "First.png",
+    title: "Озеро возле гор",
+    content: "романтическое приключение",
+    price: "480",
+    valute: "$",
+  },
+  {
+    bgImg: "Second.png",
+    title: "Ночь в горах",
+    content: "в компании друзей",
+    price: "500",
+    valute: "$",
+  },
+  {
+    bgImg: "Three.png",
+    title: "Йога в горах",
+    content: "для тех, кто забоится о себе",
+    price: "230",
+    valute: "$",
+  },
+];

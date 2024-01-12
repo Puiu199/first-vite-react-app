@@ -1,12 +1,10 @@
+import Wrapp from "../wrappImg/Wrapp";
+import { date } from "../data";
 
-
-export default function ElementList(props){
-
-    return(
-        <li>
-            <strong>{props.title}</strong>
-            <p>{props.content} </p>
-        </li>
-    )
-
+export default function ElementList() {
+  return (
+    <Wrapp>
+      <img src="./public/bg/" alt="" />
+    </Wrapp>
+  );
 }

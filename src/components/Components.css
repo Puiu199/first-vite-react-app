@@ -14,11 +14,31 @@
     font-weight: 400;
 }
 
+.description {
+    width: 100%;
+    height: 90px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(10px);
+    color: white;
+    position: absolute;
+    box-sizing: border-box;
+
+    &>span {
+        width: auto;
+        z-index: 1000;
+        height: 40px;
+        backdrop-filter: blur(10px);
+    }
+}
+
 .yellowT {
     color: #F2BE22;
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 20px;
-
 }

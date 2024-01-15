@@ -9,6 +9,7 @@ import Wrapp from "./wrappImg/Wrapp";
 import WrappV from "./wrappVideo/WrappV";
 import Button from "./greenB/Button";
 import ElementList from "./components/ElementList";
+import Footer from "./footer/Footer";
 
 export default function App() {
   return (
@@ -106,17 +107,66 @@ export default function App() {
               <Title>Популярные направления</Title>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-evenly flex-row overflow-hidden">
-            <ElementList></ElementList>
-          </Row>
+          <ElementList></ElementList>
           <Row className="mt-3 ">
             <Col className="col d-flex justify-content-center align-items-center">
               <Button>Рейтинг направлений</Button>
             </Col>
           </Row>
         </Container>
+        <Container>
+          <Row className="d-flex justify-content-around flex-column align-items-center mt-5">
+            <Col className="col d-flex justify-content-around flex-column align-items-center ">
+              <YellowT>делимся впечатлениями</YellowT>
+              <Title>Блог о путешествиях</Title>
+            </Col>
+          </Row>
+          <Row></Row>
+          <Row className="d-flx justify-content-center">
+            <Col className="col-2">
+              <Button>Другие материалы</Button>
+            </Col>
+          </Row>
+        </Container>
       </main>
-      <footer></footer>
+      <Footer>
+        <Container>
+          <Row className=" d-flex justify-content-evenly  align-items-center">
+            <Col className="col">
+              <span>Компания «РумТибет»</span>
+              <Tcontent>
+                Его корни уходят в один фрагмент классической латыни 45 года
+                н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
+                профессор латыни из колледжа Hampden-Sydney.
+              </Tcontent>
+            </Col>
+            <Col className="col-3">
+              <span>Наши услуги</span>
+              <ul>
+                <li>
+                  <a href="http://">Прогулки в горы летом</a>
+                </li>
+                <li>
+                  <a href="http://">Зимние походы в горы</a>
+                </li>
+                <li>
+                  <a href="http://">Посещение храмов в горах</a>
+                </li>
+                <li>
+                  <a href="http://">Экстремальные виды туризма</a>
+                </li>
+                <li>
+                  <a href="http://">Походы в джунглях Амазонии</a>
+                </li>
+                <li>
+                  <a href="http://">Поездка в Африку</a>
+                </li>
+              </ul>
+            </Col>
+            <Col className=" col-3"></Col>
+          </Row>
+        </Container>
+      </Footer>
     </div>
   );
 }

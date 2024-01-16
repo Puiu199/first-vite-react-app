@@ -10,6 +10,7 @@ import WrappV from "./wrappVideo/WrappV";
 import Button from "./greenB/Button";
 import ElementList from "./components/ElementList";
 import Footer from "./footer/Footer";
+import WrappTravel from "./wrappTravel/WrappTravel";
 
 export default function App() {
   return (
@@ -114,31 +115,46 @@ export default function App() {
             </Col>
           </Row>
         </Container>
+        <div className="bg-light pt-2 pb-3">
+          <Container>
+            <Row className="d-flex justify-content-around flex-column align-items-center mt-5 mb-5 pt-4">
+              <Col className="col d-flex justify-content-around flex-column align-items-center ">
+                <YellowT>делимся впечатлениями</YellowT>
+                <Title>Блог о путешествиях</Title>
+              </Col>
+            </Row>
+            <Row className=" pt-2 ">
+              <WrappTravel></WrappTravel>
+            </Row>
+            <Row className="d-flx justify-content-center mt-4">
+              <Col className="col-2">
+                <Button>Другие материалы</Button>
+              </Col>
+            </Row>
+          </Container>
+        </div>
         <Container>
-          <Row className="d-flex justify-content-around flex-column align-items-center mt-5">
-            <Col className="col d-flex justify-content-around flex-column align-items-center ">
-              <YellowT>делимся впечатлениями</YellowT>
-              <Title>Блог о путешествиях</Title>
-            </Col>
-          </Row>
-          <Row></Row>
-          <Row className="d-flx justify-content-center">
-            <Col className="col-2">
-              <Button>Другие материалы</Button>
+          <Row className="mt-5 pt-2 d-flex flex-column justify-content-center">
+            <Col className=" d-flex justify-content-around flex-column align-items-center">
+              <YellowT>фото-отчет</YellowT>
+              <Title>Делимся впечатлениями</Title>
             </Col>
           </Row>
         </Container>
       </main>
       <Footer>
         <Container>
-          <Row className=" d-flex justify-content-evenly  align-items-center pt-5">
+          <Row>
+            <Col></Col>
+          </Row>
+          <Row className=" d-flex justify-content-evenly  align-items-center pt-5 flex-wrap">
             <Col className="col mt-5 d-flex flex-column ">
               <span>Компания «РумТибет»</span>
-              <Tcontent>
+              <p>
                 Его корни уходят в один фрагмент классической латыни 45 года
                 н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
                 профессор латыни из колледжа Hampden-Sydney.
-              </Tcontent>
+              </p>
               <div className="d-flex  flex-column ">
                 <div className="d-flex justify-content-start mt-2">
                   <a href="">info@domain.com</a>

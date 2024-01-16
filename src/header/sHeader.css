@@ -6,7 +6,10 @@ header {
     background-image: url(/public/bg/wallpaper.png);
     background-size: auto;
     background-repeat: no-repeat;
-    display: grid !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 150px;
 }
 
 

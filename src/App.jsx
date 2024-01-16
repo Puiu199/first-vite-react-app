@@ -131,16 +131,28 @@ export default function App() {
       </main>
       <Footer>
         <Container>
-          <Row className=" d-flex justify-content-evenly  align-items-center">
-            <Col className="col">
+          <Row className=" d-flex justify-content-evenly  align-items-center pt-5">
+            <Col className="col mt-5 d-flex flex-column ">
               <span>Компания «РумТибет»</span>
               <Tcontent>
                 Его корни уходят в один фрагмент классической латыни 45 года
                 н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
                 профессор латыни из колледжа Hampden-Sydney.
               </Tcontent>
+              <div className="d-flex  flex-column ">
+                <div className="d-flex justify-content-start mt-2">
+                  <a href="">info@domain.com</a>
+                  <a href="">+7 (123) 456-78-90</a>
+                </div>
+                <div className="d-flex justify-content-evenly align-items-start  mt-2 w-50">
+                  <a href="" id="telegram"></a>
+                  <a href="" id="vk"></a>
+                  <a href="" id="pinterest"></a>
+                  <a href="" id="skype"></a>
+                </div>
+              </div>
             </Col>
-            <Col className="col-3">
+            <Col className="col-3 mt-5">
               <span>Наши услуги</span>
               <ul>
                 <li>
@@ -163,7 +175,23 @@ export default function App() {
                 </li>
               </ul>
             </Col>
-            <Col className=" col-3"></Col>
+            <Col className=" col-3 mt-5">
+              <span>Важно для путешествий</span>
+              <ul>
+                <li>
+                  <a href="">Как собрать в долгий поход?</a>
+                </li>
+                <li>
+                  <a href="">Жизненно важные предметы для похода</a>
+                </li>
+                <li>
+                  <a href="">Медицинская страховка, гарантии безопасности</a>
+                </li>
+                <li>
+                  <a href="">Если вы врач - загляните сюда</a>
+                </li>
+              </ul>
+            </Col>
           </Row>
         </Container>
       </Footer>

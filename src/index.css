@@ -19,3 +19,35 @@ body {
   height: 530px;
   padding-right: 10px;
 }
+
+#telegram {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/public/socialM/ic_baseline-telegram.svg);
+}
+
+#vk {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/public/socialM/entypo-social_vk-with-circle.svg);
+}
+
+#pinterest {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/public/socialM/mdi_pinterest.svg);
+}
+
+#skype {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/public/socialM/mdi_skype.svg);
+}

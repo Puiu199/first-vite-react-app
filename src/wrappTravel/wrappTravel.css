@@ -5,6 +5,14 @@
     box-shadow: 3px 4px 7px rgb(104, 102, 102);
 }
 
+@media (max-width:770px) {
+    .wrappT {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
 
 .TravelTitele {
     text-decoration: none;
@@ -47,7 +55,7 @@
 @media (max-width:500px) {
     .wrappT section {
         height: 75% !important;
-        border: 1px solid black;
+
         overflow: hidden;
     }
 }

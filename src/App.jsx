@@ -10,6 +10,7 @@ import WrappV from "./wrappVideo/WrappV";
 import Button from "./greenB/Button";
 import ElementList from "./components/ElementList";
 import Footer from "./footer/Footer";
+import WrappSi from "./components/wrappSi";
 import WrappTravel from "./wrappTravel/WrappTravel";
 
 export default function App() {
@@ -127,7 +128,7 @@ export default function App() {
               <WrappTravel></WrappTravel>
             </Row>
             <Row className="d-flx justify-content-center mt-4">
-              <Col className="col-2">
+              <Col className="col-4">
                 <Button>Другие материалы</Button>
               </Col>
             </Row>
@@ -135,20 +136,18 @@ export default function App() {
         </div>
         <Container>
           <Row className="mt-5 pt-2 d-flex flex-column justify-content-center">
-            <Col className=" d-flex justify-content-around flex-column align-items-center">
+            <Col className="d-flex justify-content-around flex-column align-items-center">
               <YellowT>фото-отчет</YellowT>
               <Title>Делимся впечатлениями</Title>
             </Col>
           </Row>
+          <WrappSi></WrappSi>
         </Container>
       </main>
       <Footer>
         <Container>
-          <Row>
-            <Col></Col>
-          </Row>
-          <Row className=" d-flex justify-content-evenly  align-items-center pt-5 flex-wrap">
-            <Col className="col mt-5 d-flex flex-column ">
+          <Row className="d-flex justify-content-evenly  align-items-center pt-5 flex-wrap">
+            <Col className="col-6 col-sm-auto   mt-5 d-flex flex-column ">
               <span>Компания «РумТибет»</span>
               <p>
                 Его корни уходят в один фрагмент классической латыни 45 года
@@ -168,7 +167,7 @@ export default function App() {
                 </div>
               </div>
             </Col>
-            <Col className="col-3 mt-5">
+            <Col className="col-6 col-sm-auto mt-5">
               <span>Наши услуги</span>
               <ul>
                 <li>
@@ -191,7 +190,7 @@ export default function App() {
                 </li>
               </ul>
             </Col>
-            <Col className=" col-3 mt-5">
+            <Col className="col-6 col-sm-auto mt-5">
               <span>Важно для путешествий</span>
               <ul>
                 <li>

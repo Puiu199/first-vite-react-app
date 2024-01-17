@@ -2,8 +2,6 @@ import Wrapp from "../wrappImg/Wrapp";
 import { date } from "../data";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Row } from "react-bootstrap";
-
 export default function ElementList() {
   const responsive = {
     superLargeDesktop: {

@@ -1,3 +1,4 @@
+let F = 0;
 export let date = [
   {
     id: 1,
@@ -32,11 +33,10 @@ export let date = [
     valute: "$",
   },
 ];
-
 let i = 0;
 export const travels = [
   {
-    id: i++,
+    index: i++,
     imgT: "One.png",
     TravelTitele: "Красивая Италя, какая она в реальности?",
     TravelContent:
@@ -44,7 +44,7 @@ export const travels = [
     PublishedAt: "01/04/2023",
   },
   {
-    id: i++,
+    index: i++,
     imgT: "fly.png",
     TravelTitele: "Долой сомнения! Весь мир открыт для вас!",
     TravelContent:
@@ -52,7 +52,7 @@ export const travels = [
     PublishedAt: "01/04/2023",
   },
   {
-    id: i++,
+    index: i++,
     imgT: "two.png",
     TravelTitele: "Как подготовиться к путешествию в одиночку? ",
     TravelContent:
@@ -60,10 +60,18 @@ export const travels = [
     PublishedAt: "01/04/2023",
   },
   {
-    id: i++,
+    index: i++,
     imgT: "WalkT.png",
     TravelTitele: "Индия ... летим?",
     TravelContent: "Для современного мира базовый.",
     PublishedAt: "01/04/2023",
   },
+];
+export const Photos = [
+  { idF: F++, size: "4", nameFoto: "/public/img/photo/number1.png" },
+  { idF: F++, size: "3", nameFoto: "/public/img/photo/number2.png" },
+  { idF: F++, size: "3", nameFoto: "/public/img/photo/number3.png" },
+  { idF: F++, size: "3", nameFoto: "/public/img/photo/number1.png" },
+  { idF: F++, size: "4", nameFoto: "/public/img/photo/number2.png" },
+  { idF: F++, size: "3", nameFoto: "/public/img/photo/number3.png" },
 ];

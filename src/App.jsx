@@ -1,6 +1,7 @@
 import Tcontent from "./components/Tcontent";
 import Title from "./components/Title";
 import YellowT from "./components/YellowT";
+import WroundB from "./components/WroundB";
 import "./index.css";
 import Header from "./header/Header";
 import { Container, Row, Col } from "react-bootstrap";
@@ -10,6 +11,7 @@ import WrappV from "./wrappVideo/WrappV";
 import Button from "./greenB/Button";
 import ElementList from "./components/ElementList";
 import Footer from "./footer/Footer";
+
 import WrappSi from "./components/wrappSi";
 import WrappTravel from "./wrappTravel/WrappTravel";
 
@@ -18,9 +20,10 @@ export default function App() {
     <div>
       <Header></Header>
       <main className="min-vh-100">
+        {/* Section wer is about us */}
         <Container>
-          <Row className="d-flex mt-5 g-2 flex-wrap justify-content-between ">
-            <Col className="col-12 col-sm-6 d-flex ">
+          <Row className="d-flex mt-5 g-2 flex-sm-wrap flex-xs-wrap justify-content-between ">
+            <Col className="col-12 col-md-6 d-flex ">
               <Wrapp>
                 <img src="public/bg/bg1.png" alt="" />
               </Wrapp>
@@ -28,7 +31,7 @@ export default function App() {
                 <img src="public/bg/bg2.png" alt="" />
               </WrappV>
             </Col>
-            <Col className="col-12 d-flex flex-column  col-sm-6">
+            <Col className="col-12 d-flex flex-column  col-md-6">
               <div className="wrappText pl-3">
                 <YellowT>о нашем походе</YellowT>
                 <Title>Исследуйте все горные массивы мира вместе с нами</Title>
@@ -44,10 +47,11 @@ export default function App() {
             </Col>
           </Row>
         </Container>
+
         <div className="bg-light">
           <Container>
             <Row className="d-flex g-2 bg-light">
-              <Col className="col-sm-6 col-12 d-flex flex-column justify-content-evenly pt-5 pb-5 align-items-start">
+              <Col className="col-sm-12 col-md-6 d-flex flex-column justify-content-evenly pt-5 pb-5 align-items-start">
                 <YellowT>наше предложение</YellowT>
                 <Title>Лучшие программы для тебя</Title>
                 <Tcontent>
@@ -98,7 +102,7 @@ export default function App() {
                   <Button>Стоимость программ</Button>
                 </div>
               </Col>
-              <Col></Col>
+              <WroundB></WroundB>
             </Row>
           </Container>
         </div>
@@ -142,12 +146,39 @@ export default function App() {
             </Col>
           </Row>
           <WrappSi></WrappSi>
+          <Row className="d-flex justify-content-center mb-5">
+            <Col className="col-2 mb-5 ">
+              <Button>Наш pinterest</Button>
+            </Col>
+          </Row>
+          <Row className="d-flex justify-content-center align-items-center">
+            <Col className="col-12 ">
+              <div className="subscribe ml-2 d-flex flex-wrap p-5">
+                <Col className="col-12 col-sm-6 col-md-6 d-flex flex-column justify-content-evenly align-items-start">
+                  <YellowT>актуально</YellowT>
+                  <Title>Получайте полезные рассылки о путешествиях</Title>
+                </Col>
+                <Col className="col-12  col-sm-6 col-md-6 d-flex mt-5 flex-column">
+                  <label>Введите e-mail адрес</label>
+                  <div className="d-flex flex-wrap ">
+                    <input type="text" placeholder="name@domain.com" />
+                    <Button>Подписаться на новости</Button>
+                  </div>
+                  <span>
+                    подписываясь на новости, вы автоматически соглашаетесь с
+                    условиями обработки персональных данных и правилами
+                    рекламных рассылок
+                  </span>
+                </Col>
+              </div>
+            </Col>
+          </Row>
         </Container>
       </main>
       <Footer>
-        <Container>
+        <Container className="mt-5">
           <Row className="d-flex justify-content-evenly  align-items-center pt-5 flex-wrap">
-            <Col className="col-6 col-sm-auto   mt-5 d-flex flex-column ">
+            <Col className="col-12 col-sm-6   mt-5 d-flex flex-column ">
               <span>Компания «РумТибет»</span>
               <p>
                 Его корни уходят в один фрагмент классической латыни 45 года
@@ -167,7 +198,7 @@ export default function App() {
                 </div>
               </div>
             </Col>
-            <Col className="col-6 col-sm-auto mt-5">
+            <Col className="col-12 col-sm-3 mt-5">
               <span>Наши услуги</span>
               <ul>
                 <li>
@@ -190,7 +221,7 @@ export default function App() {
                 </li>
               </ul>
             </Col>
-            <Col className="col-6 col-sm-auto mt-5">
+            <Col className="col-12 col-sm-3 mt-5">
               <span>Важно для путешествий</span>
               <ul>
                 <li>

@@ -75,3 +75,26 @@ export const Photos = [
   { idF: F++, size: "4", nameFoto: "/public/img/photo/number2.png" },
   { idF: F++, size: "3", nameFoto: "/public/img/photo/number3.png" },
 ];
+let TB = 0;
+export const TheBest = [
+  {
+    idThebest: TB++,
+    imgTB: "./public/img/Thebest/I.png",
+    NameClass: "Left-Right",
+  },
+  {
+    idThebest: TB++,
+    imgTB: "./public/img/Thebest/II.png",
+    NameClass: "Right-Left",
+  },
+  {
+    idThebest: TB++,
+    imgTB: "./public/img/Thebest/III.png",
+    NameClass: "Right-Left",
+  },
+  {
+    idThebest: TB++,
+    imgTB: "./public/img/Thebest/IV.png",
+    NameClass: "Left-Right",
+  },
+];
